@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+  }
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+ .one,.four {
+    margin-top:5rem;
+  }
+ .two,.three {
+    margin-top:6rem;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+  
+    background: rgb(238, 233, 233);
+    margin-top:5px;
+  }
+  .select{
+    width:15rem;
+    height:2rem;
+     font-size:15px ;
+     border-color: white;
+  }
+  .block{
+    width:100%;
+  }
+  .btnn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btnn:hover {
+  background-color: RoyalBlue;
+}
+  </style>
+
+
+  
+</head>
+  <body>
+    <nav class="navbar navbar-light bg-light"> 
+     <div>
+      <select class="select"><option>Filter your list</option>
+        <option>sansburry</option>
+        <option>wholemeal</option>
+        <option>genius gluten</option>
+        </select>
+     </div>
+     <a href=""><u>clear filters</u></a>
+    </nav>
+    <button class="btnn"><i class="fa fa-bars"></i></button>
+   <label>Sort by:</label> <select class="select"><option>Favourites first</option>
+      <option>sansburry</option>
+      <option>wholemeal</option>
+      <option>genius gluten</option>
+      </select>
+
+    <div class="container-fluid">
+      
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="gluten.jpg" alt="image" />
+          <div class="card-body">
+          <h6 class="card-title">Genius Gluten Free Pitta Breads x3</h6>
+          <p class="one"><strong>$2.00</strong>/unit $1.08/100g</p>
+
+          <button class="btn btn-primary block">Add</button>
+          </div>
+          </div>
+
+
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="white.jpg" alt="image" />
+          <div class="card-body">
+          <h6 class="card-title">Sainsburry's White pittas x6</h6>
+          <p class="two"><strong>50p</strong>/unit  8p/ea</p>
+          
+           <button class="btn btn-primary block">Add</button></div>
+          
+          </div>
+      </div>
+      <div class="col-md-3">
+      
+          <div class="card">
+            <img class="card-img-top img-fluid" src="wholemeal.jpg" alt="image" />
+            <div class="card-body">
+            <h6 class="card-title">Sainsbury's Wholemeal Pittas x6</h6>
+            <p class="three"><strong>50p</strong>/unit 8p /ea</p>
+            
+          
+            <button class="btn btn-primary block">Add</button>
+
+            </div>
+            </div>
+        
+      </div>
+      <div class="col-md-3">
+      
+          <div class="card">
+            <img class="card-img-top img-fluid" src="stone.jpg" alt="image" />
+            <div class="card-body">
+            <h6 class="card-title">Food Doctor Stone Baked Seed & Cereal Pitta x6 360g</h6>
+            <p class="four"><strong>$1.15</strong>/unit  19p/ea</p>
+            <button class="btn btn-primary block">Add</button>
+            </div>
+            </div>
+        
+      </div>
+    </div>
+    </div>
+    
